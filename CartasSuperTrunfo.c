@@ -122,8 +122,5 @@ int main() {
     printf("Com a Densidade Populacional: Carta %d venceu (%d)\n", resultadoDensidade ? 1 : 2, resultadoDensidade);
     printf("Com o melhor PIB Per Capita: Carta %d venceu (%d)\n", resultadoPIBperCapita ? 1 : 2, resultadoPIBperCapita);
 
-
-
-    
     return 0;
 }
