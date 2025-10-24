@@ -23,8 +23,7 @@ int main() {
     float densidade2;
     float pibPerCapita2;
 
-    // Entrada dos dados da Carta 1
-    printf("Desafio Xadrez!\n");
+    // Entrada dos dados da Carta 1.
     printf("Cadastro da Carta 1:\n");
     printf("Digite o Estado (A-H): ");
     scanf(" %c", &estado1);
@@ -52,7 +51,7 @@ int main() {
     
     printf("\n");
 
-    // Entrada dos dados da Carta 2
+    // Entrada dos dados da Carta 2.
     printf("Cadastro da Carta 2:\n");
     printf("Digite o Estado (A-H): ");
     scanf(" %c", &estado2);
@@ -78,7 +77,7 @@ int main() {
     densidade2 = (float)populacao2 / area2;
     pibPerCapita2 = (pib2 * 1000000000.0f) / (float)populacao2;
 
-    // Exibição dos dados da Carta 1
+    // Exibição dos dados da Carta 1.
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
@@ -90,7 +89,7 @@ int main() {
     printf("Densidade Populacional: %.2f\n", densidade1);
     printf("O PIB per capita é: %.2f\n", pibPerCapita1);
 
-    // Exibição dos dados da Carta 2
+    // Exibição dos dados da Carta 2.
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Codigo: %s\n", codigo2);
