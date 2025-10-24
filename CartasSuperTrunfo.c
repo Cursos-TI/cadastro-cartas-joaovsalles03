@@ -24,6 +24,7 @@ int main() {
     float pibPerCapita2;
 
     // Entrada dos dados da Carta 1
+    printf("Desafio Xadrez!\n");
     printf("Cadastro da Carta 1:\n");
     printf("Digite o Estado (A-H): ");
     scanf(" %c", &estado1);
@@ -100,6 +101,6 @@ int main() {
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f\n", densidade2);
     printf("O PIB per capita é: %.2f\n", pibPerCapita2);
-
+    
     return 0;
 }
