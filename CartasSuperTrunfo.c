@@ -100,6 +100,30 @@ int main() {
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f\n", densidade2);
     printf("O PIB per capita é: %.2f\n", pibPerCapita2);
+
+    //======== COMPARAÇÕES ENTRE AS CARTAS========
+    //Resultado 0 para falso (perdeu) e Resultado 1 para verdadeiro (venceu)
+
+    int resultadoPopulacao = populacao1 > populacao2;
+    int resultadoArea = area1 > area2;
+    int resultadoPIB = pib1 > pib2;
+    int resultadoPontosTuristicos = pontosTuristicos1 > pontosTuristicos2;
+    //A menor densidade VENCE.
+    int resultadoDensidade = densidade1 < densidade2;
+    int resultadoPIBperCapita = pibPerCapita1 > pibPerCapita2;
+
+    //Para exibir o resultado final.
+    printf("\n==== Resultado das comparações ====\n");
+
+    printf("No quesito de População: Carta %d venceu (%d)\n", resultadoPopulacao ? 1 : 2, resultadoPopulacao);
+    printf("Em quantidade de Área: Carta %d venceu (%d)\n", resultadoArea ? 1 : 2, resultadoArea);
+    printf("Com o maior PIB total: Carta %d venceu (%d)\n", resultadoPIB ? 1 : 2, resultadoPIB);
+    printf("Com mais Pontos Turisticos: Carta %d venceu (%d)\n", resultadoPontosTuristicos ? 1 : 2, resultadoPontosTuristicos);
+    printf("Com a Densidade Populacional: Carta %d venceu (%d)\n", resultadoDensidade ? 1 : 2, resultadoDensidade);
+    printf("Com o melhor PIB Per Capita: Carta %d venceu (%d)\n", resultadoPIBperCapita ? 1 : 2, resultadoPIBperCapita);
+
+
+
     
     return 0;
 }
