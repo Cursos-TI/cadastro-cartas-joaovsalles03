@@ -1,4 +1,6 @@
 #include <stdio.h>
+//PROGRAMA DO TEMA 3 - NÍVEL MESTRE
+//Implementando Comparações Avançadas com Atributos Múltiplos em C
 
 int main() {
     // Declaração das variáveis da Carta 1
