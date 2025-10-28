@@ -110,6 +110,7 @@ int main() {
     printf("4 - Pontos Turísticos\n");
     printf("5 - Densidade Demográfica\n");
     printf("6 - PIB per Capita\n");
+    printf("7 - Comparação Geral (Soma dos Atributos)\n");
     printf("Escolha o atributo para comparar (1-6): ");
     scanf("%d", &opcao);
 
