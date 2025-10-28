@@ -197,9 +197,29 @@ int main() {
                 printf("Empate!\n");
             break;
 
+       case 7: { // Comparação Geral
+            printf("Atributo escolhido: Comparação Geral (Soma dos Atributos)\n");
+
+            // Normalizando atributos com pesos para somatória
+            float soma1 = populacao1 + area1 + pib1 + pontosTuristicos1 + (1000000.0f / densidade1) + (pibPerCapita1 / 1000.0f);
+            float soma2 = populacao2 + area2 + pib2 + pontosTuristicos2 + (1000000.0f / densidade2) + (pibPerCapita2 / 1000.0f);
+
+            printf("%s: %.2f pontos totais\n", cidade1, soma1);
+            printf("%s: %.2f pontos totais\n", cidade2, soma2);
+
+            if (soma1 == soma2)
+                printf("Empate geral!\n");
+            else if (soma1 > soma2)
+                printf("Vencedora geral: %s\n", cidade1);
+            else
+                printf("Vencedora geral: %s\n", cidade2);
+            break;
+        }
+
         default:
-            printf("Opção inválida! Escolha um número de 1 a 6.\n");
+            printf("Opção inválida! Escolha um número de 1 a 7.\n");
     }
 
+    printf("\n===== FIM DA PARTIDA =====\n");
     return 0;
 }
